@@ -1,0 +1,121 @@
+body{
+    background-color: #DBDDF4;
+}
+.card {
+    border-radius: 15px; 
+    height: 190px;
+    /* width: 16rem; Adjust this value to make the card smaller */
+}
+.card-img-top {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.sidebar{
+    border-radius: 15px;
+    height: 850px;
+    width:250px;
+    padding-top: 20px;
+    padding-left: 20px;
+    background-color: white;
+}
+
+.welcome{
+    border-radius: 15px;
+    height: 200px;
+    width:1065px;
+    padding-top: 20px;
+    padding-left: 20px;
+    background-color: white;
+}
+
+.profile{
+    border-radius: 15px;
+    height: 439px;
+    width:1065px;
+    padding-top: 20px;
+    padding-left: 20px;
+    background-color: white;
+}
+.logo{
+    width: 50px;
+    font-style:bold;
+}
+.sideOp{
+    background-color: white;
+    margin: 10px;
+    padding: 7px;
+    border-radius: 10px;
+}
+.sideOp:hover {
+    background-color: #DBDDF4;
+    transition: background-color 0.3s ease;
+    margin: 8px;
+    padding: 7px;
+    border-radius: 10px;
+}
+
+.col{
+    /* min-width: 200px; */
+}
+.side-logo{
+    width:20px;
+}
+.sideOp div {
+    color: #353E6C;
+    font-size:15px;
+}
+
+.logo-text div{
+    font-weight: bold;
+    font-size:20px;
+}
+
+.orang{
+    width : auto;
+    height: auto;
+    max-width: 1090px;
+    max-height: 1000px;
+    object-fit: contain;
+    /* margin:auto; */
+}
+
+.task{
+
+    width: 100%; /* atau bisa disesuaikan menjadi width yang spesifik, misalnya: 50px */
+    max-width: 90px; /* untuk menjaga responsivitas */
+    height: auto; /* untuk mempertahankan rasio aspek gambar */
+    max-height: 90px;
+    object-fit: contain; /* memastikan gambar tidak terpotong dan tetap proporsional */
+    border-radius: 10px;
+    /* margin: auto; */
+    background-color: #5E6790;
+}
+
+.profile img{
+    margin:50px;
+}
+
+.btn-login{
+    background-color: #5038ED;
+    color: white;
+    /* font-size: 12px; */
+}
+
+.btn-details{
+    background-color: #F9908A;
+    color: black;
+    font-weight: bold;
+    width: 150px;
+    border-radius: 15px;
+    /* font-size: 12px; */
+}
+.sub-sub {
+    flex: 1; /* Pastikan kolom 2A dan 2B memiliki lebar yang sama */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ /* Warna latar belakang untuk sub-kolom */
+    border-radius: 10px; /* Sudut yang membulat */
+    height: 100%;
+}
