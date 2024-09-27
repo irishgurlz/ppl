@@ -10,45 +10,39 @@
     <link rel="stylesheet" href="{{asset('/css/style.css')}}">
 </head>
 <body>
-    <main class="container-fluid my-3">
-        <div class="row">
-            {{-- Kolom 1 --}}
-            <div class="col-sm-12 col-md-3 col-lg-2">
-                @include("partial/sidebar")
+<main class="container-fluid my-0 p-0"> <!-- Menghapus padding -->
+    <div class="row g-0"> <!-- g-0 untuk menghapus jarak antar kolom -->
+        <!-- Kolom 1 -->
+        <div class="col col-sm-12 col-md-2 col-lg-2 p-2 d-none d-md-block">
+            @include("partial/sidebar");
+        </div>
+        <!-- Kolom 2 -->
+        <div class="col col-sm-9 col-md-6 col-lg-7 d-flex flex-column justify-content-start p-2 pt-3">
+            <div class="text-black column-title d-flex justify-content-start" style="width:100%; height: 5%; font-weight: bold; border-radius: 5px; margin: 0;">
+                <p class="d-flex aling-items-end m-2">Alokasi Ruangan</p>
             </div>
-            {{-- Kolom 2 --}}
-            <div class="col-sm-12 col-md-6 col-lg-7">
-                <div class = "row my-3"></div>
-                <div class = "row mt-5 mx-1">
-                    <div class="card-build d-flex flex-column justify-content-center align-items-center" style="width: 1065px; height: 785px; border-radius: 15px; background-color: white; padding:auto;">
-                        <img src="img/building.png" style="width:150px; height: 120px;"alt="">
-                        <div>Click details to alocate room</div>
-                    </div>
+            <div class="bg-white column-title d-flex justify-content-between" style="width:100%; height: 100%; border-radius: 15px; margin: 0; position: relative;">
+                <div class="card-build d-flex flex-column justify-content-center align-items-center" style="width: 1065px; height: 785px; border-radius: 15px; background-color: white; padding:auto;">
+                    <img src="img/building.png" style="width:150px; height: 120px;"alt="">
+                    <div>Click details to alocate room</div>
                 </div>
-            </div>
-            {{-- Kolom 3 --}}
-            <div class="col-sm-12 col-md-3 col-lg-3">
-                <div class = "row mt-1 mb-2">
-                    <nav class="navbar navbar-light">
-                        <div class="container-fluid">
-                          <form class="d-flex">
-                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"  style="border-radius: 10px;" >
-                            <button class="btn btn-outline-success" type="submit"  style="border-radius: 10px;" >Search</button>
-                          </form>
-                        </div>
-                      </nav>
-                </div>
-                <div class="row mx-1">
-                    <div class="select-building" style="width:500px; height:785px; background-color: white; border-radius:15px;">
-                        <div class="task-logo ml-5 mt-3">
-                            <img src="img/task-1.png" style="width: 40px; border-radius: 10px; background-color: #5E6790;">
-                    
-                        </div>
-                    </div>
-                </div>
-                {{-- @include("partial/sideprofile") --}}
+
             </div>
         </div>
-    </main>
+        
+        <!-- Kolom 3 -->
+        <div class="col col-sm-3 col-md-4 col-lg-3 d-flex flex-column justify-content-start p-2 d-none d-md-block" >
+        <nav class="navbar navbar-light pb-2">
+            <div>
+                <form class="d-flex justify-content-start">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"  style="border-radius: 10px;" >
+                <button class="btn btn-outline-success" type="submit"  style="border-radius: 10px;" >Search</button>
+                </form>
+            </div>
+        </nav>
+        <div class="text-black bg-white pt-3" style="width:100%; height:94%; border-radius: 15px; margin: 0;text-align:center;">
+        </div>
+    </div>
+</main>
 </body>
 </html>
